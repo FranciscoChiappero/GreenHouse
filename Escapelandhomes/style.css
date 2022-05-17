@@ -13,7 +13,7 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: grey;
+    
 }
 
 .header {
@@ -21,9 +21,8 @@ body {
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: #E8F9FD;
+    background-image: linear-gradient(to left, rgb(141, 221, 141),#2FA4FF);
     padding: 40px;
-    background-color: gre;
 }
 
 .headerNav {
