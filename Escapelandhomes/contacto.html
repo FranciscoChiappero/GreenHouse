@@ -6,25 +6,56 @@
     <head>
         <meta charset="UTF-8">
         <title>GreenCabin</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shorcut icon" href="../imagenes/Logo.jpg">
     </head>
 <body>
    <div>
-      <header>
-       <div class="header">
-          <!--Logo-->
-          <a href="../index.html"> <img src="../imagenes/Logo.jpg" alt=""></a>
-              <!--Link de navegacion-->
-               <ul class="headerNav">
-                  <li><a href="productos.html"> Products</a></li>
-                  <li><a href="servicios.html"> Services</a></li>
-                  <li><a href="quienessomos.html"> About Us</a></li>
-                  <li><a href="contacto.html"> Contact</a></li>
-              </ul>
-          </div>
-      </header>
+    <header class="header animate__animated animate__fadeInDown">
+        <!--Logo-->
+        <a class="logo" href="../index.html"> <img src="../imagenes/Logo.jpg" alt="Logo"></a>
+        <!--Link de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html" style="color:white">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html" style="color:white">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./quienessomos.html" style="color:white">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html" style="color:white">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                      More information
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Your Order</a></li>
+                      <li><a class="dropdown-item" href="#">Hire a Service</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Consults</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+</header>
   </div> 
    <div class="heroText">
            <div class="heroTitle" >Contact us</div>
@@ -46,6 +77,7 @@
           <img src="../imagenes/facebook.png" />
       </div>
   </footer>
+  <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
