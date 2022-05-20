@@ -10,9 +10,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    height: 100vh;
+
     
 }
 
@@ -23,6 +24,7 @@ body {
     color: white;
     background-image: linear-gradient(to left, rgb(141, 221, 141),#2FA4FF);
     padding: 40px;
+    padding-bottom: 60px;
 }
 
 .headerNav {
@@ -39,11 +41,11 @@ body {
 /* Seccion Principal */
 .hero {
     display: flex;
-    align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
     justify-content: space-between;
     padding-left: 12rem;
     padding-right: 12rem;
+    min-height: 100vh;
 
 }
 
@@ -81,6 +83,7 @@ body {
     justify-content: space-between;
     text-align: center;
     margin-top: 10rem;
+    min-height: 100vh;
 
 }
 
@@ -122,14 +125,6 @@ body {
 }
 
 
-.footer {
-    display: flex;
-    margin: 200px;
-    align-items: center;
-    background-color: #E8F9FD;
-
-}
-
 .footer .Fimg {
     align-items: center;
     width: 100%;
@@ -156,10 +151,10 @@ body {
     display: flex;
     width: 33, 33%;
     text-align: center;
-    align-items: center;
     flex-wrap: wrap;
     justify-self: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .Servicios .item {
@@ -222,11 +217,16 @@ body {
 }
 
 .footer {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
+    width: 100%;
+    margin: 200px;
+
+
+    
+    }
 }
-  }
 
   @media only screen and (max-width: 1200px) {
     .hero {
