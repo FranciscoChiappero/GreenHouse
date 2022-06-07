@@ -54,6 +54,7 @@
   padding-left: 12rem;
   padding-right: 12rem;
   min-height: 100vh;
+  min-width: 300px;
 }
 
 .aboutus {
@@ -82,6 +83,7 @@
 .heroImg img {
   width: 400px;
   border-radius: 10px;
+  min-width: 300px;
 }
 
 .heroTitle {
@@ -127,6 +129,7 @@
   font-weight: 400;
   color: white;
   font-size: 1.5rem;
+  min-width: 300px;
 }
 
 .infoProductos ul {
@@ -152,6 +155,7 @@
   color: white;
   gap: 1rem;
   margin-left: 2rem;
+  min-width: 300px;
 }
 
 .footer .Fimg {
@@ -176,6 +180,7 @@
   min-height: 120vh;
   margin-left: 1%;
   margin-right: 1%;
+  min-width: 300px;
 }
 
 .Servicios {
@@ -191,6 +196,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  min-width: 300px;
 }
 
 .Servicios .item {
@@ -206,6 +212,7 @@
   padding: 10px;
   max-width: 500px;
   height: 250px;
+  min-width: 300px;
 }
 
 .item .titulos {
@@ -213,13 +220,14 @@
   color: #2FA4FF;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem;
+    min-width: 300px;
   }
   .heroText {
     padding: 1rem;
@@ -255,6 +263,7 @@
             align-items: center;
     width: 100%;
     margin: 200px;
+    min-width: 300px;
   }
 }
 
@@ -269,10 +278,50 @@
             flex-direction: column-reverse;
     padding-left: 2rem;
     padding-right: 2rem;
+    min-width: 300px;
   }
 }
 
 .logo img {
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    background-image: none;
+    background-color: #2FA4FF;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infogeneral {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Servicios {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutus {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .heroImg {
+    visibility: hidden;
+  }
+  .Fimg {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 /*# sourceMappingURL=main.css.map */

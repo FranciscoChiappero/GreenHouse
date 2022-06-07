@@ -1,0 +1,6 @@
+Mixing header
+
+1. se creo un archivo mixin.scss dentro de una carpeta base y se hizo un mixing e import de los estilos del header.
+2. se agrego un mixin en la clase contendor.
+3. se agrego un mixin al heroboton.
+
