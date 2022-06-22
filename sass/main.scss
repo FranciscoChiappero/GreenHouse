@@ -9,6 +9,7 @@
 .contenedor {
     @include body;
 
+
 }
 
 .header {
@@ -42,13 +43,14 @@
     color: white;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin-left: 20px;
 
 }
 
 .aboutus img {
     border-radius: 10px;
     margin-top: 3rem;
+    margin-left: 20px;
 }
 
 .hero p {
@@ -139,8 +141,6 @@
     display: grid;
     grid-template-rows: 400px auto 400px;
     min-height: 120vh;
-    margin-left: 1%;
-    margin-right: 1%;
     min-width: 300px;
 
 
@@ -169,15 +169,22 @@
     background-color: #E8F9FD;
     border-radius: 10px;
     padding: 10px;
-    max-width: 500px;
     height: 250px;
-    min-width: 300px;
+    min-width: 463px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
 
 }
 
 .item .titulos {
     font-size: 2rem;
     color: #2FA4FF;
+}
+
+.item:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+   
 }
 
 
@@ -224,19 +231,6 @@
         height: 50px;
     }
 
-    .footer {
-        margin-left: 20px;
-        margin-right: 20px;
-        align-items: center;
-        width: 100%;
-        margin: 200px;
-        min-width: 300px;
-
-
-
-
-
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -262,9 +256,6 @@
 
     }
 
-    .footer {
-        flex-wrap: wrap;
-    }
 
     .hero {
         flex-wrap: wrap;
@@ -291,4 +282,6 @@
         align-items: flex-start;
         
     }
+
+
 }
